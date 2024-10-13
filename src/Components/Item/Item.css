@@ -1,0 +1,36 @@
+.ListGroup {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(218, 224, 202);
+}
+
+.CardItem {
+    height: 100%;
+    width: 100%;
+    max-width: 300px;
+    background-color: rgb(161, 169, 240);
+    box-shadow: 5px 10px 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.ItemImg {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    object-fit: contain;
+   
+}
+.ItemImg:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+

@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 5px;
+    background-color: rgb(182, 173, 173);
+    border-bottom: 5px solid red;
+}
+
+.Logo {
+    width: 40px;
+    height: auto;
+}
+
+.Categories {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Carrito-C {
+    width: 25px;
+
+}
+
+.Option,
+.ActiveOption {
+    color: rgb(22, 18, 18);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.ActiveOption {
+    color: blue;
+}
+
+.Option:hover {
+    background-color: red;
+}
