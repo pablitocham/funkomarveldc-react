@@ -31,7 +31,7 @@ const ItemDetail = ({ id, name, price, description, stock, img, category }) => {
                     Categoria: {category}
                 </p>
                 <p className="Info">
-                    Descripcion: ${description}
+                    Descripcion: {description}
                 </p>
                 <p className="Info">
                     Precio: ${price}
