@@ -1,0 +1,35 @@
+
+
+.Form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+    
+}
+
+.Input{
+    margin: 10px ;
+    padding: 15px;
+    width: 100%;
+}
+
+button[type="submit"]{
+    margin: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(78, 75, 75);
+}
+
+button[type="submit"]:hover{
+    background-color: aqua;
+}
+
+.Check{
+    background-color: red;
+    text-align: center;
+}

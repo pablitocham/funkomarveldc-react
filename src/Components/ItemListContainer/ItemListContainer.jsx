@@ -13,8 +13,8 @@ const ItemListContainer = ({ greeting }) => {
         getDocs(colecctionsRef).then((snaps) => {
             const { docs } = snaps
             const list = docs.map((doc) => ({ ...doc.data(), id: doc.id }))
-          
             setProducts(list)
+
         })
     }, [categoryId])
 

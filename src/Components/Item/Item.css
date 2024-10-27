@@ -3,14 +3,13 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
-    background-color: rgb(218, 224, 202);
+    background-color: whitesmoke
 }
 
 .CardItem {
-    height: 100%;
-    width: 100%;
     max-width: 300px;
-    background-color: rgb(161, 169, 240);
+    min-height: 400px;
+    background-color: rgba(197, 197, 221, 0.952);
     box-shadow: 5px 10px 6px;
     display: flex;
     flex-direction: column;
@@ -18,19 +17,37 @@
     align-items: center;
     text-align: center;
     padding: 10px;
+    overflow: hidden;
 }
 
+.Info {
+    margin: 20px;
+}
 
 .ItemImg {
     width: 100%;
     height: auto;
     max-width: 150px;
     object-fit: contain;
-   
 }
-.ItemImg:hover{
+
+.ItemImg:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
 
 
+@media screen and (min-width: 600px) {
+    .ListGroup {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+    .ListGroup {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}

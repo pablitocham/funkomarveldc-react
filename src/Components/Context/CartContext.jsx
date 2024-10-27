@@ -3,19 +3,27 @@ import { createContext, useState } from "react";
 export const CartContext = createContext({
     cart: []
 })
-//pruba
+
 export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([])
-    console.log(cart)
     const totalQuantity = cart.reduce((acc, prod) => acc + prod.quantity, 0)
     const total = cart.reduce((acc, prod) => acc + (prod.price * prod.quantity), 0)
 
     const addItem = (item, quantity) => {
-        if (!isIncart(item.id)) {
+        if (!isInCart(item.id)) {
             setCart(prev => [...prev, { ...item, quantity }])
-            alert('PRODUCTO AGREGADO')
+            Swal.fire({
+                title: `Funko ${item.name}`,
+                text: "Agregado",
+                icon: "info"
+
+            })
         } else {
-            alert(' EL PRODUCTO YA AGREGADO')
+            setCart(prev => prev.map(prod => prod.id === item.id
+                ? { ...prod, quantity: prod.quantity + quantity } : prod
+            ))
+
+
         }
     }
 
@@ -27,9 +35,10 @@ export const CartProvider = ({ children }) => {
     const clearCart = () => {
         setCart([])
     }
-    const isIncart = (itemId) => {
+    const isInCart = (itemId) => {
         return cart.some(prod => prod.id === itemId)
     }
+
     return (
         <CartContext.Provider value={{ cart, addItem, removeItem, clearCart, totalQuantity, total }}>
             {children}

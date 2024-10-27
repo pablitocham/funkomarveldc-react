@@ -9,9 +9,12 @@ const ItemDetailContainer = () => {
     const { itemId } = useParams()
 
     useEffect(() => {
-        const docRef = doc(db, 'products', itemId)
+        const docRef = doc(db, 'products', itemId,)
         getDoc(docRef).then((snaps) => {
-          setProduct(snaps.data())
+            {
+                setProduct({ id: snaps.id, ...snaps.data() })
+
+            }
         })
 
     }, [itemId])
