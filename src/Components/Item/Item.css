@@ -3,7 +3,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
-    background-color: whitesmoke
+ background-color: whitesmoke
 }
 
 .CardItem {
@@ -18,17 +18,29 @@
     text-align: center;
     padding: 10px;
     overflow: hidden;
+    transition: transform 0.2s ease-in-out;
 }
+
+.CardItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgb(0, 0, 0, 0.3);
+}
+
+
+
 
 .Info {
     margin: 20px;
 }
 
 .ItemImg {
-    width: 100%;
-    height: auto;
-    max-width: 150px;
+    width: 290px;
+    height: 200px;
     object-fit: contain;
+    background-color: blue;
+    border-radius: 100px;
+
+
 }
 
 .ItemImg:hover {

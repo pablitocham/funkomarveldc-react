@@ -4,9 +4,6 @@ import { addDoc, collection, getDocs, query, where, writeBatch, Timestamp, docum
 import { db } from "../Config/firebaseConfig"
 import CheckoutForm from "../CheckoutForm/CheckoutForm"
 
-
-
-
 const Checkout = () => {
     const [orderId, setOrderId] = useState('')
     const { cart, total, clearCart } = useContext(CartContext)
@@ -38,7 +35,6 @@ const Checkout = () => {
                 }
             })
 
-
             if (outOfStock.length === 0) {
                 await batch.commit()
                 const orderRef = collection(db, 'orders')
@@ -51,11 +47,10 @@ const Checkout = () => {
         } catch (error) {
             console.error('Error', error)
         }
-
     }
-
     if (orderId) {
-        return <h1 className="Check"> El id de su orden es {orderId}</h1>
+        return <h1 className="Check"> El id de su orden es {orderId} <br /> pude pasar por Calle falsa 123 <br /> a retirar su producto y abonarlo</h1>
+        
     }
 
 

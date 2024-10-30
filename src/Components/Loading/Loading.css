@@ -1,0 +1,12 @@
+.Loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.Loading p {
+    color: blue;
+}

@@ -2,6 +2,8 @@ import { Link } from "react-router-dom"
 import './Item.css'
 
 const Item = ({ id, name, price, stock, img }) => {
+    const thereIsStock = stock === 0
+    
     return (
         <article className="CardItem">
             <header className="Header">
@@ -21,7 +23,11 @@ const Item = ({ id, name, price, stock, img }) => {
                 </p>
             </section>
             <footer className=" ItemFooter">
+                {thereIsStock ?(
+                    <p className="stockMsj">Nos quedamos sin Funko </p>
+                ):(
                 <Link to={`/item/${id}`} className='Option'> Ver Detalles</Link>
+                )}
             </footer>
         </article>
     )

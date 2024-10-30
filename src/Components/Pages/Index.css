@@ -5,19 +5,22 @@
     align-items: center;
     justify-content: flex-start;
     background-image: url('/public/img/heroes.png');
-    background-color: rgb(227, 228, 213);
     height: 100vh;
     background-size: cover;
     background-position: center;
 }
 
-.Index{
+.Index {
     margin-top: 10px;
     margin-bottom: 5px;
+    font-size: 2.5rem;
+    text-shadow: 3px 6px 6px rgb(0, 0, 0, 0.5);
 }
+
 p {
     font-size: 18px;
-    color: rgb(12, 11, 11);
+    color: rgb(29, 1, 1);
+
 }
 
 span {
@@ -25,12 +28,24 @@ span {
     font-weight: bold;
 }
 
+.Funkos {
+    line-height: 1.2;
+    
+}
+
 .Productos {
     margin-top: 20px;
     font-weight: bold;
     font-size: 28px;
+    padding: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 8px;
     text-decoration: none;
-    border-radius: 35px;
-   background-color: chartreuse;
-   color: black;
+    color: #1a237e;
+
+}
+
+.Productos:hover {
+    background-color: #fbc02d;
+    color: #0d47a1;
 }

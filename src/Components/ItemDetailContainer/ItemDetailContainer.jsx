@@ -13,7 +13,6 @@ const ItemDetailContainer = () => {
         getDoc(docRef).then((snaps) => {
             {
                 setProduct({ id: snaps.id, ...snaps.data() })
-
             }
         })
 
