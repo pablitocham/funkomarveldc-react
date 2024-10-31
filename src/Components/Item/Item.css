@@ -3,7 +3,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
- background-color: whitesmoke
+    background-color: rgb(180, 187, 187);
 }
 
 .CardItem {
@@ -34,11 +34,11 @@
 }
 
 .ItemImg {
-    width: 290px;
+    width: 150px;
     height: 200px;
     object-fit: contain;
-    background-color: blue;
-    border-radius: 100px;
+    filter: drop-shadow(2px 2px 20px cyan);
+
 
 
 }
