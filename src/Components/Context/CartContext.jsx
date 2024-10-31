@@ -44,7 +44,7 @@ export const CartProvider = ({ children }) => {
             })
 
         } catch (error) {
-            console.log('Error al agregar Funko:', Error)
+            console.log('Error al agregar Funko:', error)
             Swal.fire({
                 title: 'Error al Agregar Funko',
                 icon: "error"
@@ -59,12 +59,12 @@ export const CartProvider = ({ children }) => {
                 return
             setCart(prev => prev.filter(prod => prod.id !== itemId))
             Swal.fire({
-                title: `Se elimino Funko ${item.name}`,
-                icon: "succes"
+                title: `Se elimino Funko ${funkoRemove.name}`,
+                icon: "success"
             })
 
         } catch (error) {
-            console.log(`Error al eliminar Funko:`, Error)
+            console.log(`Error al eliminar Funko:`, error)
         }
     }
 

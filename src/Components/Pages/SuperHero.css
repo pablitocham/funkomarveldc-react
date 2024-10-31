@@ -1,3 +1,43 @@
+.Back {
+    background-image: url('./public/img/back.jpg');
+    background-size: cover;
+    background-position: center;
+} 
+
+.TextTitulo {
+    font-size: 2.5rem;
+    text-shadow: 3px 6px 6px rgba(241, 231, 231, 0.5);
+}
+
+.Super {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 30px;
+    height: 100vh;
+
+}
+
+.Contacto {
+    margin-top: 10px;
+    height: 55px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.Contacto:hover {
+    background-color: aqua;
+}
+
+.Super input {
+    width: 200px;
+    height: 50px;
+}
+
+
 h1{
 text-align: center;
 }

@@ -60,8 +60,8 @@ const SuperHero = () => {
   
 
     return (
-        <div>
-            <h1>Contactanos </h1>
+        <div className='Back'> 
+            <h1 className='TextTitulo'>Contactanos </h1>
             <form className='Super' onSubmit={handleSubmit}>
                 <input type='text' placeholder='Ingresa tu nombre' value={name} onChange={(e) => setName(e.target.value)} />
                 <input type='text' placeholder='Ingresa tu cel' value={phone} onChange={(e) => setPhone(e.target.value)} />
