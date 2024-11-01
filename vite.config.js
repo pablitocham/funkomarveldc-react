@@ -6,3 +6,4 @@ export default defineConfig({
   base : "/funkomarveldc-react",
   plugins: [react()],
 })
+
