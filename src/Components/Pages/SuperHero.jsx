@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './SuperHero.css'
+
 
 const SuperHero = () => {
     const [name, setName] = useState('')
