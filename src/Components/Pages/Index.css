@@ -58,11 +58,12 @@ span {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("./img/back-contact.jpg");
+    background-image: url("/public/img/back-contact.jpg");
     background-repeat: no-repeat;
     height: 100vh;
     background-size: cover;
     background-position: center;
+    
 }
 
 .TextTitulo {
