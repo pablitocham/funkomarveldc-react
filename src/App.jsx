@@ -14,7 +14,7 @@ import Checkout from './Components/Checkout/Checkout';
 function App() {
   return (
     <div className='App'>
-      <BrowserRouter basename='/funkomarveldc-react'>
+      <BrowserRouter>
       <CartProvider>
         <NavBar />
         <Routes>
