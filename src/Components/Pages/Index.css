@@ -49,3 +49,77 @@ span {
     background-color: #fbc02d;
     color: #0d47a1;
 }
+
+
+
+
+.Back{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./img/back-contact.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.TextTitulo {
+    font-size: 2.5rem;
+    text-shadow: 3px 6px 6px rgba(240, 237, 237, 0.5);
+    color: blue;
+
+}
+
+.Super {
+    
+    margin-top: 10px;
+    gap: 30px;
+    height: 100vh;
+
+}
+
+.Contacto {
+    margin-top: 10px;
+    height: 55px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.Contacto:hover {
+    background-color: aqua;
+}
+
+.Super input {
+    width: 200px;
+    height: 50px;
+}
+
+
+h1{
+text-align: center;
+}
+.Super {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 30px;
+}
+.Contacto {
+    margin-top: 10px;
+    height: 55px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.Contacto:hover {
+    background-color: aqua;
+}
+.Super input{
+    width: 200px;
+    height: 50px;
+} 
